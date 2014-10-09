@@ -21,4 +21,24 @@ class PointTest < Test::Unit::TestCase
     assert_equal(0, point.x)
   end
 
+  def test_equals
+
+    point = Point.new
+    point.x = 1
+    point.y = 1
+
+    other = Point.new
+    other.x = 1
+    other.y = 1
+    assert(point == other)
+  end
+
+  def test_print
+    point = Point.new
+
+    assert_nothing_thrown do
+      point.print
+    end
+  end
+
 end
