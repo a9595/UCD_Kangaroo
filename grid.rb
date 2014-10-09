@@ -2,10 +2,6 @@ class Grid
 
   attr_accessor :dimensions
 
-  def initialize(dimensions)
-    @dimensions = dimensions
-  end
-
   def initialize
     @dimensions = 0
   end
@@ -21,8 +17,6 @@ class Grid
     else
       false
     end
-
-
   end
 
 end
