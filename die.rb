@@ -16,10 +16,8 @@ class Die
         @current_side = :south
       when 4
         @current_side = :west
-      else
-        @current_side = :north
     end
-    @current_side
+
 
   end
 end
