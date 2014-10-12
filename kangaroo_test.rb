@@ -14,7 +14,10 @@ class KangarooTest < Test::Unit::TestCase
   def test_hop!
     kangaroo = Kangaroo.new Grid.new
 
-    assert_nothing_raised(kangaroo.hop!)
+    assert_nothing_thrown 'hop! method mistake was thrown!' do
+      kangaroo.hop!
+    end
+
   end
 
   def test_at_home?
