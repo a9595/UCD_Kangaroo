@@ -11,13 +11,13 @@ class GridTest < Test::Unit::TestCase
   end
 
   def test_lies_outside?
-    grid = Grid.new
-    point = Point.new
+    grid = Grid.new #dimension to 0,0 in initializer
+    point = Point.new #0,0 by default in initializer
 
     assert((!grid.lies_outside? point), 'lies outside mistake')
 
-    point.x = 99 #totally outside :)
-    point.y = 99
+    point.x = 1  #set outside
+    point.y = 1
     assert((grid.lies_outside? point), 'lies outside mistake')
   end
 

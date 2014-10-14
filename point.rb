@@ -19,17 +19,15 @@ class Point
         @y -= 1
       when :west
         @x -= 1
+      else
+
     end
 
 
   end
 
   def ==(other)
-    if @x == other.x && @y == other.y
-      true
-    else
-      false
-    end
+    (@x == other.x && @y == other.y) ? true : false
   end
 
   def print
